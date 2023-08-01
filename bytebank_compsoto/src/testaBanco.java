@@ -7,11 +7,11 @@ public class testaBanco {
 		pedro.cpf = "222.222.222-22";
 		pedro.profissao = "programador";
 		
-		conta contadoPedro = new conta();
-		contadoPedro.deposita(100);
+		conta contaDoPedro = new conta();
+		contaDoPedro.deposita(100);
 		
-		contadoPedro.titular = pedro;
-		System.out.println(contadoPedro.titular.nome);
+		contaDoPedro.titular = pedro;
+		System.out.println(contaDoPedro.titular.nome);
 	}
 
 }

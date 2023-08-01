@@ -1,19 +1,19 @@
 
 public class testaMetodo {
 	 public static void main(String[] args) {
-         conta contadoPedro = new conta();
-         contadoPedro.saldo = 100;
-         contadoPedro.deposita(50);
-         System.out.println(contadoPedro.saldo);
+         conta contaDoPedro = new conta();
+         contaDoPedro.saldo = 100;
+         contaDoPedro.deposita(50);
+         System.out.println(contaDoPedro.saldo);
 
-         boolean conseguiuRetirar = contadoPedro.saca(20);
-         System.out.println(contadoPedro.saldo);
+         boolean conseguiuRetirar = contaDoPedro.saca(20);
+         System.out.println(contaDoPedro.saldo);
          System.out.println(conseguiuRetirar);
 
          conta contaDaMarcela = new conta();
          contaDaMarcela.deposita(1000);
 
-         boolean sucessoTransferencia = contaDaMarcela.transfere(300, contadoPedro);
+         boolean sucessoTransferencia = contaDaMarcela.transfere(300, contaDoPedro);
          if(sucessoTransferencia) {
              System.out.println("transferencia com sucesso");
          } else {
@@ -21,11 +21,11 @@ public class testaMetodo {
 
          }
          System.out.println(contaDaMarcela.saldo);
-         System.out.println(contadoPedro.saldo);
+         System.out.println(contaDoPedro.saldo);
 
 
-         contadoPedro.titular = "pedro henrique";
-         System.out.println(contadoPedro.titular);
+         contaDoPedro.titular = "pedro henrique";
+         System.out.println(contaDoPedro.titular);
 
      }
 

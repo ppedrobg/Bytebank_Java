@@ -1,6 +1,6 @@
 
 public class conta {
-	 double saldo;
+		private double saldo;
 	    int agencia;
 	    int numero;
 	    cliente titular;
@@ -25,9 +25,12 @@ public class conta {
 	                this.saldo -= valor;
 	                destino.deposita(valor);
 	                return true;
-	            } else {
+	            }  
 	                return false;
-	            }
+	           
+	        }
+	        public double getSaldo() {
+	        return this.saldo;
 	        }
 
 }

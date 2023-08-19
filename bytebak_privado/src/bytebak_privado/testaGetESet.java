@@ -3,9 +3,8 @@ package bytebak_privado;
 public class testaGetESet {
 	
 	public static void main(String[] args) {
-		conta conta = new conta();
-		//conta.numero = 1337;
-		conta.setNumero(1337);
+		conta conta = new conta(1337, 24226);
+		
 		System.out.println(conta.getNumero());
 		
 		cliente pedro = new cliente();
@@ -17,6 +16,8 @@ public class testaGetESet {
 		System.out.println(conta.getTitular().getNome());
 		
 		conta.getTitular().setProfissao("programador");
+		
+		
 	}
 
 }

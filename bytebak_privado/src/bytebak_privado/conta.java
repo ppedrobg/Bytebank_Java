@@ -4,8 +4,13 @@ public class conta {
 	    private int agencia;
 	    private int numero;
 	    private cliente titular;
+	    private static int total;
 	    
 	    public conta(int agencia, int numero){
+	    	 
+	    	conta.total++;
+	    	System.out.println("o total de contas é " + conta.total);
+	    	
 	    	this.agencia = agencia;
 	    	this.numero = numero;
 	    	System.out.println("estou criando uma conta" + this.numero);
@@ -68,4 +73,11 @@ public class conta {
 	        public cliente getTitular() {
 				return titular;
 			}
+
+			public static int getTotal() {
+				return conta.total;
+			}
+
+			
+	        
 }
